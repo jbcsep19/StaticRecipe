@@ -49,4 +49,10 @@ public class HomeController {
     public String antipastoSalad() {
         return "antipastosalad";
     }
+
+    @RequestMapping("/surendra")
+    public String momo() {
+        return "surendra";
+    }
 }
+
