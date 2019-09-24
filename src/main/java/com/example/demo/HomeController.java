@@ -9,19 +9,16 @@ public class HomeController {
     public String classPage(){
         return "index";
     }
-
-
+    
     @RequestMapping("/greens")
     public String getGreens(){
         return "Greens";
     }
 
-
     @RequestMapping("/nora")
     public String nora(){
         return "nora";
     }
-
 
     @RequestMapping("/smoothies")
     public String john1(){
@@ -36,5 +33,10 @@ public class HomeController {
     @RequestMapping("/fruity-delicious")
     public String john3(){
         return "fruity-delicious";
+    }
+
+    @RequestMapping("/kathy")
+    public String kathy(){
+        return "kathy";
     }
 }
