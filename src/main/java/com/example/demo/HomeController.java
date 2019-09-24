@@ -9,17 +9,20 @@ public class HomeController {
     public String classPage(){
         return "index";
     }
-
-
+    
     @RequestMapping("/greens")
     public String getGreens(){
         return "Greens";
     }
 
-
     @RequestMapping("/nora")
     public String nora(){
         return "nora";
+    }
+
+    @RequestMapping("/kathy")
+    public String kathy(){
+        return "kathy";
     }
 
 }
