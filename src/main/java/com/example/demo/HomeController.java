@@ -9,4 +9,10 @@ public class HomeController {
     public String classPage(){
         return "index";
     }
+    
+    
+    @RequestMapping("/nora")
+    public String nora(){
+        return "nora";
+    }
 }
