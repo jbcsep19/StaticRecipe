@@ -39,4 +39,9 @@ public class HomeController {
     public String kathy(){
         return "kathy";
     }
+
+    @RequestMapping("/reymofongo")
+    public String reyMofongo() {
+        return "reymofongo";
+    }
 }
