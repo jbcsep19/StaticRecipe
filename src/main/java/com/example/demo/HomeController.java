@@ -10,9 +10,16 @@ public class HomeController {
         return "index";
     }
 
+
     @RequestMapping("/greens")
     public String getGreens(){
         return "Greens";
+    }
+
+
+    @RequestMapping("/nora")
+    public String nora(){
+        return "nora";
     }
 
 }
