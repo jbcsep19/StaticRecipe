@@ -57,5 +57,8 @@ public class HomeController {
 
     @RequestMapping("/katrina")
     public String gumbo(){ return "katrina";}
+
+    @RequestMapping("johnk")
+    public String chickenSoup() { return "chickenSoup"; }
 }
 
