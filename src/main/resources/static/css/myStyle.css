@@ -3,3 +3,7 @@ body{
     /*background-repeat: no-repeat;*/
     /*background-size: auto;*/
 }
+
+div#d1{
+    font-family: 'Mansalva', cursive;
+}

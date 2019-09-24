@@ -22,4 +22,19 @@ public class HomeController {
         return "nora";
     }
 
+
+    @RequestMapping("/smoothies")
+    public String john1(){
+        return "smoothies";
+    }
+
+    @RequestMapping("/lemon-lite")
+    public String john2(){
+        return "lemon-lite";
+    }
+
+    @RequestMapping("/fruity-delicious")
+    public String john3(){
+        return "fruity-delicious";
+    }
 }
