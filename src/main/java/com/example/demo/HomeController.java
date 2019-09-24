@@ -54,5 +54,8 @@ public class HomeController {
     public String momo() {
         return "surendra";
     }
+
+    @RequestMapping("/katrina")
+    public String gumbo(){ return "katrina";}
 }
 
