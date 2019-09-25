@@ -65,9 +65,18 @@ public class HomeController {
     public String cheeseBread() { return "cheese-bread"; }
 
     @RequestMapping("/Beza_home")
-    public String homePage(){retun "/Beza_home";}
+    public String homePage(){return "/Beza_home";}
     @RequestMapping("/beza_recipe")
     public String recipe(){return "beza_recipe";}
+
+    @RequestMapping("/JoeHome")
+    public String joeHome(){return "/JoeHome";}
+    @RequestMapping("/JoeChicken")
+    public String joeChicken(){return "JoeChicken";}
+    @RequestMapping("/JoeShumai")
+    public String joeShumai(){return "JoeShumai";}
+    @RequestMapping("/JoeGallery")
+    public String joeGallery(){return "JoeGallery";}
 
     //Daniel here - I'm getting a little bit late today, so I'll push cheese-bread above, now at morning from home
     //please delete these comments after you read them :^)
