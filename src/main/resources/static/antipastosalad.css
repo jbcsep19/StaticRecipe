@@ -1,0 +1,47 @@
+/*body {*/
+/*    background: url("https://res.cloudinary.com/fdmckie/image/upload/v1569333553/AntipastoBackground2_s4rozf.jpg") no-repeat center center fixed;*/
+/*     -webkit-webkit-background-size: cover;*/
+/*    -moz-webkit-background-size: cover;*/
+/*    -ms-webkit-background-size: cover;*/
+/*    -o-webkit-background-size: cover;*/
+/*    -khtml-webkit-background-size: cover;*/
+/*    webkit-background-size: cover;*/
+/*}*/
+
+/*.antipastobackground{*/
+/*    background: url("https://res.cloudinary.com/fdmckie/image/upload/v1569270588/AntipastoBackground_v8aygt.jpg") no-repeat center center fixed;*/
+/*         -webkit-webkit-background-size: cover;*/
+/*        -moz-webkit-background-size: cover;*/
+/*        -ms-webkit-background-size: cover;*/
+/*        -o-webkit-background-size: cover;*/
+/*        -khtml-webkit-background-size: cover;*/
+/*        webkit-background-size: cover;*/
+/*}*/
+
+
+
+div{
+    background: url("https://res.cloudinary.com/fdmckie/image/upload/v1569333553/AntipastoBackground2_s4rozf.jpg") no-repeat center center fixed;. -webkit-webkit-background-size: ;
+    -moz-webkit-background-size: cover;
+    -ms-webkit-background-size: cover;
+    -o-webkit-background-size: cover;
+    -khtml-webkit-background-size: cover;
+    webkit-background-size: cover;
+    background-size: cover;
+}
+
+.country{
+    font-size: x-large;
+}
+
+.container{
+    color: white;
+}
+
+.saladingredients{
+    font-size: x-large;
+}
+
+.vinaigretteingredients{
+    font-size: x-large;
+}

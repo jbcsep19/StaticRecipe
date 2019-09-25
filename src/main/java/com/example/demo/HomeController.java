@@ -9,7 +9,9 @@ public class HomeController {
     public String classPage(){
         return "index";
     }
-    
+
+
+
     @RequestMapping("/greens")
     public String getGreens(){
         return "Greens";
@@ -39,4 +41,46 @@ public class HomeController {
     public String kathy(){
         return "kathy";
     }
+
+    @RequestMapping("/reymofongo")
+    public String reyMofongo() {
+        return "reymofongo";
+    }
+
+    @RequestMapping("/dwayne")
+    public String antipastoSalad() {
+        return "antipastosalad";
+    }
+
+    @RequestMapping("/surendra")
+    public String momo() {
+        return "surendra";
+    }
+
+    @RequestMapping("/katrina")
+    public String gumbo(){ return "katrina";}
+
+    @RequestMapping("johnk")
+    public String chickenSoup() { return "chickenSoup"; }
+
+    @RequestMapping("/cheese-bread")
+    public String cheeseBread() { return "cheese-bread"; }
+
+    @RequestMapping("/Beza_home")
+    public String homePage(){return "/Beza_home";}
+    @RequestMapping("/beza_recipe")
+    public String recipe(){return "beza_recipe";}
+
+    @RequestMapping("/JoeHome")
+    public String joeHome(){return "/JoeHome";}
+    @RequestMapping("/JoeChicken")
+    public String joeChicken(){return "JoeChicken";}
+    @RequestMapping("/JoeShumai")
+    public String joeShumai(){return "JoeShumai";}
+    @RequestMapping("/JoeGallery")
+    public String joeGallery(){return "JoeGallery";}
+
+
+
 }
+

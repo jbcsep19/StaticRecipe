@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <style>
+
+        #pageTitle{
+            font-size: 35px;
+            text-align: center;
+            color: maroon;
+            font-family: 'Mansalva', cursive;
+        }
+
+        body {
+            padding: 20px;
+            font-family: 'Open Sans', sans-serif;
+            background-color: blanchedalmond;
+        }
+
+        .lib-panel {
+            margin-bottom: 20Px;
+        }
+        .lib-panel img {
+            width: 100%;
+            background-color: transparent;
+        }
+
+        .lib-panel .row,
+        .lib-panel .col-md-6 {
+            padding: 0;
+            background-color: #FFFFFF;
+        }
+
+
+        .lib-panel .lib-row {
+            padding: 0 20px 0 20px;
+        }
+
+        .lib-panel .lib-row.lib-header {
+            background-color: #FFFFFF;
+            font-size: 20px;
+            padding: 10px 20px 0 20px;
+        }
+
+        .lib-panel .lib-row.lib-header .lib-header-seperator {
+            height: 2px;
+            width: 26px;
+            background-color: #d9d9d9;
+            margin: 7px 0 7px 0;
+        }
+
+        .lib-panel .lib-row.lib-desc {
+            position: relative;
+            height: 100%;
+            display: block;
+            font-size: 13px;
+        }
+        .lib-panel .lib-row.lib-desc a{
+            position: absolute;
+            width: 100%;
+            bottom: 10px;
+            left: 20px;
+        }
+
+        .row-margin-bottom {
+            margin-bottom: 20px;
+        }
+
+        .box-shadow {
+            -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+            box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+        }
+
+        .no-padding {
+            padding: 0;
+        }
+
+        a.divLink {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            text-decoration: none;
+            /* Makes sure the link doesn't get underlined */
+            z-index: 10;
+            /* raises anchor tag above everything else in div */
+            background-color: white;
+            /*workaround to make clickable in IE */
+            opacity: 0;
+            /*workaround to make clickable in IE */
+            filter: alpha(opacity=0);
+            /*workaround to make clickable in IE */
+        }
+
+    </style>
+</head>
+<body>
+
+<h1 id="pageTitle">Image Gallery</h1>
+<header>
+    <div class="container">
+        <div class="row"></div>
+        <div class="row row-margin-bottom">
+            <div class="col-md-5 no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <a class="divLink" href="/Shumai">Shumai</a>
+                        <div class="col-md-6">
+                            <img class="lib-img-show" src="https://healthynibblesandbits.com/wp-content/uploads/2019/05/Cantonese-Shumai-FF2.jpg">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="lib-row lib-header">
+                                Shumai
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                A steamed or fried dumpling that contains a pastelike filling of minced ingredients,
+                                as pork, shrimp, ginger, and onion, usually seasoned with soy sauce and often only
+                                partially wrapped, exposing part of the filling.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5 no-padding lib-item" data-category="ui">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <a class="divLink" href="/HaiChicken">HaiChicken</a>
+                        <div class="col-md-6">
+                            <img class="lib-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8TZh_nitkGUbQ6n32kfI3PkCklDo4MAD5VcQm3CUVJPW0dbppSA">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="lib-row lib-header">
+                                White Cut Chicken
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                White cut chicken or white sliced chicken is a type of siu mei. Unlike most other meats
+                                in the siu mei category, this particular dish is not roasted. The dish is common to
+                                the cultures of Southern China, including Guangdong, Fujian and Hong Kong.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<ul class="nav nav-pills justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link" href="/StaticRecipePage">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/HaiChicken">White Cut Chicken</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/Shumai">Shumai</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="#">ImageGallery</a>
+    </li>
+</ul>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
