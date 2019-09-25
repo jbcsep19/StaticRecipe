@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -26,6 +26,10 @@
             padding: 14px 16px;
             text-decoration: none;
             font-size: 17px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        #navbarNew {
             font-family: 'Roboto Condensed', sans-serif;
         }
 
@@ -89,6 +93,8 @@
     </style>
 </head>
 <body>
+
+<!--<div th:insert="index :: navbar" id="navbarNew"></div>-->
 
 <div id="navbar">
     <a class="active" href="javascript:void(0)">Home</a>

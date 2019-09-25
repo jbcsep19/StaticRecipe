@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Recipes</title>
@@ -14,48 +14,66 @@
 </style>
 
 <body>
+<div th:fragment="navbar">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Let's_Eat</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Let's_Eat</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="/greens">Greens</a>
+                        <a class="dropdown-item" href="/smoothies">Smoothies</a>
+                        <a class="dropdown-item" href="/reymofongo">Mofongo</a>
+                        <a class="dropdown-item" href="/cheese-bread">P&atilde;o de Queijo - Cheese Bread</a>
 
-                    <a class="dropdown-item" href="/greens">Greens</a>
-                    <a class="dropdown-item" href="/smoothies">Smoothies</a>
-                    <a class="dropdown-item" href="/reymofongo">Mofongo</a>
-                    <a class="dropdown-item" href="/cheese-bread">P&atilde;o de Queijo - Cheese Bread</a>
-                </div>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div>
-</nav>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</div>
 
 <main role="main" class="container">
 
-    <div class="starter-template">
+    <div class="starter-template text-light">
         <h1>Bootstrap starter template</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
     </div>
+
+    <div class="row">
+        <div class="col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi cum deserunt doloremque facere facilis illum impedit incidunt ipsam molestias placeat praesentium, recusandae similique tenetur vitae! Necessitatibus nobis reiciendis totam!</p>
+
+        </div>
+        <div class="col">
+
+        </div>
+        <div class="col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea est et illo iste nostrum, pariatur recusandae? Ab aperiam beatae explicabo impedit ipsum iste minus molestias nemo odit similique? Iusto, nisi.</p>
+
+        </div>
+    </div>
+
+    <br>
 
 </main>
 
