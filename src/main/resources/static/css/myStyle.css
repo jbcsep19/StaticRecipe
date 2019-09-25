@@ -1,5 +1,11 @@
 body{
     background-image: url("https://res.cloudinary.com/jihyunle/image/upload/v1569345772/VINTAGE-RECIPE-HOLDER.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
+
+    /*background-repeat: no-repeat;*/
+    /*background-size: auto;*/
+}
+
+div#d1{
+    font-family: 'Mansalva', cursive;
+
 }

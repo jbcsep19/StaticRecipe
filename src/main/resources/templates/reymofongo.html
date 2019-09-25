@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva|Roboto+Condensed&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-size: 28px;
+            font-family: 'Mansalva', cursive;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: #333;
+            z-index:1;
+
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        #navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .content1 {
+            background: url(https://res.cloudinary.com/playrey/image/upload/v1569330196/Random/Santaella_Lobster-Mofongo-Mofongo-Relleno-de-Langosta--58add8923df78c345bdf17ae_mbwigs.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            padding: 16px;
+            color: white;
+        }
+
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .sticky + .content1 {
+            padding-top: 60px;
+        }
+
+        h2 {
+            color: red;
+        }
+
+
+
+        #PR {
+            text-align: center;
+        }
+
+        #PR img {
+            width: 200px;
+        }
+
+        #directions {
+            text-align: justify;
+            float: none;
+        }
+
+        #directions li {
+            padding: 10px;
+        }
+
+        .d-block {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="navbar">
+    <a class="active" href="javascript:void(0)">Home</a>
+    <a href="/">Other recipes</a>
+    <!--    <a href="javascript:void(0)">About Mofongo</a>-->
+</div>
+
+<div class="content1">
+
+    <h1 style="text-align: center">Mofongo Recipe</h1>
+    <p id="PR">
+        <img src="https://res.cloudinary.com/playrey/image/upload/v1569333701/Random/1280px-Flag_of_Puerto_Rico.svg_cnrxx8.png">
+        Puerto Rican Recipe
+    </p>
+
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-4">
+                <h2>Ingredients:</h2>
+                <ul>
+                    <li>4 green plantains</li>
+                    <li>1 lb of chicharrón (crunchy pork skin)</li>
+                    <li>3 garlic cloves, mashed</li>
+                    <li>4 teaspoons of olive oil</li>
+                    <li>2 cups frying oil</li>
+                </ul>
+            </div>
+
+            <div class="col-8">
+                <div class="container">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 100%;">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100"
+                                     src="https://res.cloudinary.com/playrey/image/upload/v1569338592/Random/mofongo1_ithbeb.jpg"
+                                     alt="First slide" >
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                     src="https://res.cloudinary.com/playrey/image/upload/v1569338592/Random/mofongo2_aslgjb.jpg"
+                                     alt="Second slide" >
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100"
+                                     src="https://res.cloudinary.com/playrey/image/upload/v1569338592/Random/mofongo_carne_o11p2c.jpg"
+                                     alt="Third slide" >
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <strong>
+        Serves 4 people
+    </strong>
+    <h2>
+        Directions:
+    </h2>
+
+
+    <ol id="directions">
+        <li>
+            Peel the plantains, cut them into 1 1/2-inch slices, soak them in salty water for 15 minutes, drain them and
+            dry them before putting them on the hot skillet with oil.
+        </li>
+
+        <li>
+            Fry them for about 12 minutes at medium-low heat or until they turn light brown. Make sure to turn them. Do
+            not
+            brown them too much, so they are easy to mash. Stick a fork in them to check if they are done.
+        </li>
+        <li>
+            Remove them and mash them on a mortar. Add some mashed garlic and pieces of chicharrón.
+        </li>
+
+        <li>
+            Once you have mashed all the plantains, mold them into the shape of half sphere using your hands or a
+            container.
+            Serve hot with chicken broth or your favorite meat.
+        </li>
+    </ol>
+
+
+    <h2>
+        Expert Tips
+    </h2>
+    <p>
+        You can use crunchy smoked bacon instead of chicharrón, and you can also stuff the mofongo with shrimp and other seafood.    </p>
+
+    <h2>
+        More about this recipe:
+    </h2>
+    <p>
+        When we think about Puerto Rico, we generally remember the beautiful beaches, the amazing sunsets, the piña colada and mofongo, which is often considered the most popular Puerto Rican dish. Mofongo is one of the Puerto Rican delights made with fried mashed green (not ripe) plantains, mashed garlic and small pieces of crunchy chicharrón. It is mashed to get a consistency that is neither too soft nor too hard so that it can form a half-sphere or molded into the shape of a bowl to stuff it with pork meat, seafood or chicken chicharrón. My favorite mofongo is served with carne frita or shrimp mojo.
+    </p>
+
+
+</div>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
