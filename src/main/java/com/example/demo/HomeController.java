@@ -64,6 +64,11 @@ public class HomeController {
     @RequestMapping("/cheese-bread")
     public String cheeseBread() { return "cheese-bread"; }
 
+    @RequestMapping("/Beza_home")
+    public String homePage(){retun "/Beza_home";}
+    @RequestMapping("/beza_recipe")
+    public String recipe(){return "beza_recipe";}
+
     //Daniel here - I'm getting a little bit late today, so I'll push cheese-bread above, now at morning from home
     //please delete these comments after you read them :^)
 }
