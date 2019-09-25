@@ -9,4 +9,10 @@ public class HomeController {
     public String classPage(){
         return "index";
     }
+
+    @RequestMapping("/test")
+    public String testPage(){
+        return "test";
+    }
+
 }
